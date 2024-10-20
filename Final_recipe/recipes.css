@@ -1,0 +1,652 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+}
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+body {
+    height: 100%;
+    background-image: url(images/rback.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    font-family: "Scheherazade New", serif;
+    font-weight: 400;
+    font-style: normal;
+    /* justify-content: center; */
+}
+
+.hed {
+    width: 100%;
+    color: aliceblue;
+    position: sticky;
+    top: 0; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.marquee {
+    padding: 10px 0;
+}
+
+.slogan p {
+    position: relative;
+    transition: color 0.4s ease, text-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.slogan p:hover {
+    color: #ffc107;
+    text-shadow: 0 0 10px rgba(255, 193, 7, 0.8), 0 0 20px rgba(255, 193, 7, 0.6); /* Adds a glowing effect */
+    transform: scale(1.1); /* Enlarges and slightly rotates the text */
+    background: linear-gradient(45deg, #ff9a00, #ffc107, #ffdd57); /* Adds gradient text color */
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; /* Makes gradient visible on text */
+}
+
+
+.navbar {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+    width: 80px;
+    height: 10%;
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    font-size: x-large;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    border-top: 3px solid rgb(237, 227, 227); 
+    border-bottom: 3px solid rgb(243, 237, 237); 
+}
+
+.slogan {
+    font-size: 50px;
+    color: aliceblue;
+    margin-left: 50px;
+    margin-top: 220px;
+    margin-right: 700px;
+    margin-bottom: 20%;
+    text-align: left;
+}
+
+
+form{
+    padding: 30px 30px;
+    /* background-color: bisque; */
+    color: white;
+    margin: 100px auto;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+/* Container Styling */
+.tips {
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 100px;
+    margin-bottom: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+  }
+  
+  /* Heading Styling */
+  .tips h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .tips p.lead {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+    color: #555;
+  }
+  
+  /* List Styling */
+  .tips-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Default: Single column */
+    gap: 20px; /* Space between items */
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    list-style-type: none;
+  }
+  
+  /* Individual Tip Cards */
+  .tips-list li {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tips-list li h5 {
+    margin: 0 0 10px 0;
+    font-size: 1.25rem;
+    /* color: #333; */
+  }
+  
+  .tips-list li p {
+    margin: 0;
+    font-size: 1rem;
+    /* color: #666; */
+  }
+  
+  /* Responsive Grid */
+  @media (min-width: 768px) {
+    .tips-list {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .tips-list {
+      grid-template-columns: repeat(3, 1fr); /* Three columns for large screens */
+    }
+  }
+  
+  /* Hover Effect */
+  .tips-list li:hover {
+    background-color: #000000; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+.container1 {
+    font-size: x-large;
+    color: aliceblue;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 100px;
+    margin-bottom: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+.container{
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 100px;
+    margin-bottom: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+
+}
+
+.swiper{
+    width: 100%;
+}
+
+.swiper-wrapper{
+    width: 100%;
+    height: 35em;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+
+.card{
+    width: 20em;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.228);
+
+
+    border-radius: 2em;
+    box-shadow: 0 0 2em rgba(0,0,0, .2);
+    padding: 2em 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 2em;
+    color: #ffffff;
+
+}
+
+.swapper-slide:not(.swiper-slide-active){
+    filter: blur(1px);
+}
+
+.card_image{
+    width: 10em;
+    height: 10em;
+    /* border-radius: 30%;
+    border: 5px solid #212023; */
+    padding: 3px;
+    margin-bottom: 2em;
+
+}
+.card_image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.card_content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.card_title{
+     font-size: 1.5em;
+     font-weight: 500;
+     position: relative;
+     top: .2em;
+}
+
+.card_text{
+    text-align: center;
+    font-size: 1.1em;
+    margin: 1em 0;
+}
+
+.card_btn{
+    /* background-color: #4617178a; */
+    background-color: black;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    padding: .5em;
+    border-radius: .5em;
+    margin-top: .5em;
+    cursor: pointer;
+
+}
+
+
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    /* padding: 40px 0; */
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 100px;
+    margin-bottom: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+
+
+.footer-logo {
+    /* margin-bottom: 30px; Increased space between logo and the next section */
+    text-align: center; 
+    margin-bottom: 2%;
+
+}
+.footer-logo h2 {
+    text-align: center;
+    font-size: xx-large;
+    font-family: fantasy;
+    font-weight: bold;
+    position: relative; /* Position relative for the ::after element */
+    /* margin-bottom: 20px;  */
+}
+
+.footer-logo h2::after {
+    content: '';
+    display: block;
+    width: 80%; /* Width of the line */
+    height: 3px; /* Thickness of the line */
+    background-color: #ffffff; /* Color of the line (adjust as needed) */
+    margin: 10px auto 0 auto; /* Center the line */
+    border-radius: 5px; /* Make the line slightly rounded */
+}
+
+
+.footer-logo img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-description {
+    font-size: 3.1em;
+    margin-bottom: 20px; 
+}
+
+.footer-review {
+    font-style: italic;
+    padding-left: 15px;
+    margin-bottom: 30px; 
+}
+
+.footer-contact {
+    margin-bottom: 30px; 
+}
+
+.footer-contact h5 {
+    margin-bottom: 20px; 
+}
+
+
+.social-icons {
+    display: flex;
+    margin-left: 38%;
+    align-items: center; /* Center them horizontally */
+}
+
+.social-icons a {
+    font-size: xx-large;
+    margin: 0 10px;
+    color: white;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #000000; /* Change background color on hover */
+    transform: scale(1.1); /* Optional hover scaling effect */
+}
+
+
+.social-icons a:hover {
+    color: #ffc107;
+}
+
+
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 20px; 
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ffc107;
+}
+
+footer .list-unstyled{
+    display: flex;
+    margin-left: 27%;
+    font-size: larger; 
+    gap: 20px;
+}
+
+.col-md-4 {
+    max-width: 100%;
+    padding: 0 15px;
+    margin-bottom: 20px; 
+}
+
+.col-md-4 h5 {
+    font-size: 1.25em;
+    color: #ffffff; 
+    margin-bottom: 20px; 
+}
+
+.col-md-4 ul {
+    padding: 0;
+    list-style: none;
+}
+
+.col-md-4 ul li {
+    margin-bottom: 15px; 
+}
+
+.col-md-4 ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.col-md-4 ul li a:hover {
+    color: #ffc107; 
+}
+
+.col-md-4 ul li a i {
+    margin-right: 10px; 
+    font-size: 1.2em; 
+}
+
+
+    /* Review Section Container */
+    .review-section {
+        display: none; /* Initially hidden */
+        position: absolute;
+        top: 20px; /* Adjust as needed */
+        left: 20px; /* Adjust as needed */
+        width: calc(100% - 40px); /* Full width minus padding */
+        max-width: 800px; /* Max width for larger screens */
+        background-color: #ffffff; /* White background */
+        color: #333333; /* Dark text color for readability */
+        padding: 20px; /* Padding inside the section */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        z-index: 1000; /* Ensure it’s on top of other elements */
+    }
+
+    /* Back Button Styling */
+    #back-button {
+        background-color: #007bff; /* Blue background */
+        color: white; /* White text */
+        border: none; /* Remove border */
+        padding: 10px 20px; /* Padding for the button */
+        font-size: 16px; /* Font size */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor */
+        transition: background-color 0.3s ease; /* Smooth transition */
+        position: absolute; /* Positioned in the corner */
+        top: 10px;
+        left: 10px;
+    }
+
+    #back-button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+
+    #back-button:focus {
+        outline: none; /* Remove focus outline */
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Glow effect */
+    }
+
+    /* Heading Style */
+    .review-section h5 {
+        font-size: larger; /* Font size for heading relative to surrounding text */
+        margin-bottom: 15px; /* Space below the heading */
+        color: #333333; /* Dark text color */
+    }
+
+    /* Paragraph Style */
+    .review-section p {
+        font-size: 16px; /* Font size for paragraphs */
+        line-height: 1.5; /* Line height for readability */
+        margin-bottom: 10px; /* Space between paragraphs */
+    }
+
+
+
+
+@media (max-width: 768px) {
+    .footer-logo img {
+        max-width: 80px;
+    }
+    
+    .footer-description {
+        font-size: 1em;
+    }
+    
+    .footer h5 {
+        font-size: 1.2em;
+    }
+    
+    .social-icons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer ul {
+        padding-left: 0;
+    }
+
+    .footer ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .footer ul li a {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav-links {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 10px; 
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    .nav-links li {
+        margin: 5px 0;
+    }
+    .slogan {
+        font-size: x-large;
+        margin: 20px 20px;
+    }
+    .container1 {
+        font-size: medium;
+        margin: 20px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 60px; 
+        height: auto;
+    }
+    .navbar {
+        padding: 5px 10px; 
+    }
+    .slogan {
+        font-size: large;
+        margin: 20px 10px;
+    }
+    .container1 {
+        font-size: small;
+        margin: 10px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        font-size: large;
+    }
+    .slogan {
+        font-size: medium;
+        margin: 10px 5px;
+    }
+    .container1 {
+        font-size: small;
+        margin: 10px 5px;
+    }
+}
+
+.button {
+    background-color: #eaa00e; /* Tomato color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    margin-top: 40px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.button:hover {
+    background-color: #000000; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.button:focus {
+    outline: none; /* Remove focus outline */
+    box-shadow: 0 0 0 3px rgba(255, 99, 71, 0.5); /* Add a glow effect when focused */
+}
